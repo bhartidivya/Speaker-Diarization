@@ -82,10 +82,12 @@ These notebooks were designed to run in Google Colab.
 !pip install pyannote.audio gdown pydub praat-parselmouth pyannote.metrics textgrid
 ```
 
-4. Configure a Hugging Face access token for pyannote models:
+4. Configure a Hugging Face access token for pyannote models as local
+   environment configuration. In Colab, prefer Colab Secrets; locally, keep it
+   in an ignored `.env` file or shell environment variable.
 
-```python
-HF_TOKEN = "your_hugging_face_token"
+```powershell
+$env:HF_TOKEN = "your_hugging_face_token"
 ```
 
 5. Replace the placeholder paths in the notebooks with your dataset location.
